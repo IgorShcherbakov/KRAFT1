@@ -19,6 +19,10 @@ pip install -r requirements.txt
 ```bash
 docker-compose up -d
 ```
+6. Подключиться к контейнеру и создать топик
+```bash
+kafka-topics.sh --create --topic messages --bootstrap-server localhost:9092 --partitions 3 --replication-factor 2
+```
 
 ### Примеры использования
 ```bash
